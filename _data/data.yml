@@ -99,10 +99,10 @@ projects:
       - title: Unity Player ID <a id="PlayerId"></a>
         techs: Java, MongoDB
         tagline: "帮助 Unity 开发者管理用户注册登录的服务（类似[Google Firebase Authentication](https://firebase.google.com/docs/auth/)）。
-                  开发者可以使用Email/Password，电话号码或其他知名第三方登录（Google, Facebook 等）管理用户。\n
-
+                  开发者可以使用 Email/Password，电话号码或其他知名第三方登录（Google, Facebook 等）管理用户。\n
+                  
                   - 编写 Java server，管理 User pool (ID Domain) \n
-                  - 参与数据库 (MongoDB) 和 REST API 的设 \n"
+                  - 参与数据库 (MongoDB) 和 REST API 的设计\n"
 
 publications:
     title: 论文
