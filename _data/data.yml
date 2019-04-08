@@ -1,0 +1,145 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    # about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: False # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: 李致公
+    tagline: 软件工程师
+    avatar: Li.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: lizhigong1991@gmail.com
+    phone: +86 15201926877
+    # website: blog.webjeda.com #do not add http://
+    linkedin: lizhigong 
+    github: lizhigong
+    gitlab:
+    bitbucket:
+    twitter: 
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+    goodreads: # Number-Username, e.g. 123456-alandoe
+
+    languages:
+      - idiom: 英语
+        level: CET-6 545, TOFEL 97
+
+# career-profile:
+#     title: Career Profile
+#     summary: |
+#       Summarise your career here lorem ipsum dolor sit amet, consectetuer
+#       adipiscing elit. You can [download this free resume/CV template here]().
+#       Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
+#       penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+#       Donec quam felis, ultricies nec, pellentesque eu.
+
+#       Second paragraph if required.
+
+education:
+    - degree: MSc in Computer Science
+      university: Fudan University
+      time: 2013.09 - 2016.06
+      details: |
+          - Shanghai Outstanding Graduates (2016)
+          - National Scholarship for graduates (2014, 2015)
+          - USENIX Student Grant (2014)
+            - Published a paper in USENIX Security Symposium (one of the four major international security conferences) as the first author and gave the speech about Chinese passwords.
+          - Second Gradle Scholarship for Graduate Freshman
+
+    - degree: BSc in Software Engineering
+      university: Fudan University
+      time: 2009.09 - 2013.06
+
+    - degree: BSc in Computer Science
+      university: University College Dublin
+      time: 2010.09 - 2013.06
+      details: |
+          Joint education with Fudan University.
+
+experiences:
+    title: Experiences
+
+    details:
+      - role: Software Engineer
+        time: 2016.07 - Present
+        company: Unity Technologies (Shanghai)
+        details: |
+            - [Unity Distribution Portal](#UDP)
+            - [Player ID System](#PlayerId)
+
+      - role: Software Engineer Intern
+        time: 2015.7 - 2015.9
+        company: Microsoft (Shanghai)
+        details: |
+            - Using Cordova to create a cross-platform app for MSDN.
+
+projects:
+    title: Projects
+
+    assignments:
+      - title: Unity Distribution Portal (UDP) <a id="UDP"> </a>
+        techs: C#, Java, Android
+        link: "https://distribute.dashboard.unity.com/udp/homepage"
+        tagline: "Unity Distribution Portal is a Unity product that allows developers to distribute games to multiple app stores through a single hub. UDP repacks Android apk with each store’s dedicated IAP SDK and lets developers manage all their store submissions from the UDP console. \n 
+        - Write an Android plugin that has a fake store and integrate real stores' IAP SDK. \n
+        - Write Unity extension (C#) to help developers access the service through OAuth2.0. \n
+        - Repack the Android APK on the server side (Java): Unzip APK, replace smali files of real stores, using aapt2 to rebuild resources, generate R files and at last, output a new APK that targets a desired store. \n
+        - Publish the [SDK](https://assetstore.unity.com/packages/add-ons/services/billing/unity-distribution-portal-138507) to Unity Asset Store and integrate the SDK into [UnityIAP](https://assetstore.unity.com/packages/add-ons/services/billing/unity-iap-68207) (C#), a service used by many developers. \n
+        - Dealing annoying Unity compatible problem with reflection (C#). \n
+        - Maintenance and bug fixes for the SDK. \n
+        - Got $1000 recognition bonus for the exceptional performance as a core member.\n"
+
+      - title: Unity Player ID <a id="PlayerId"></a>
+        techs: Java, MongoDB
+        tagline: "A service which handles ID system for Unity developers
+(Similar to [Google Firebase Authentication](https://firebase.google.com/docs/auth/)). 
+Developers can manager users login with email/password, phone numbers, famous federated identity providers like Google, Facebook. \n 
+- Write server (Java) that creates user pool, deals with authorization and authentication for the developer. \n
+- Design B (Mongo) & Restful API. \n"
+
+publications:
+    title: Publications
+
+    papers:
+      - title: A Large-Scale Empirical Analysis of Chinese Web Passwords
+        authors: Zhigong Li, Weili Han, Wenyuan Xu
+        conference: USENIX Security Symposium (2014)
+        link: https://www.usenix.org/node/184430
+
+      - title: Regional patterns and vulnerability analysis of chinese web passwords
+        authors: Weili Han ; Zhigong Li ; Lang Yuan ; Wenyuan Xu
+        conference: IEEE Transactions on Information Forensics and Security (TIFS)
+        link: https://ieeexplore.ieee.org/abstract/document/7298428
+
+      - title: "Shadow Attacks Based on Password Reuses: A Quantitative Empirical Analysis"
+        authors: Weili Han, Zhigong Li, Minyue Ni, Guofei Gu, Wenyuan Xu
+        conference: IEEE Transactions on Dependable and Secure Computing (TDSC)
+        link: https://ieeexplore.ieee.org/abstract/document/7469392
+
+      - title: "Zero-Sum Password Cracking Game: A Large-Scale Empirical Study on the Crackability, Correlation, and Security of Passwords"
+        authors: Shouling Ji, Shukun Yang, Xin Hu, Weili Han, Zhigong Li, Raheem Beyah
+        conference: IEEE Transactions on Dependable and Secure Computing (TDSC)
+        link: https://ieeexplore.ieee.org/abstract/document/7275157/
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Java
+        level: 80%
+
+      - name: Golang, C#
+        level: 60%
+
+      - name: Mongo, SQL
+        level: 60%
+
+      - name: HTML5 & CSS & JS
+        level: 40%
+
+      - name: Vim
+        level: 70%
