@@ -40,69 +40,72 @@ sidebar:
 #       Second paragraph if required.
 
 education:
-    - degree: MSc in Computer Science
-      university: Fudan University
+    - degree: 理学硕士 （计算机软件与理论）
+      university: 复旦大学
       time: 2013.09 - 2016.06
       details: |
-          - Shanghai Outstanding Graduates (2016)
-          - National Scholarship for graduates (2014, 2015)
-          - USENIX Student Grant (2014)
-            - Published a paper in USENIX Security Symposium (one of the four major international security conferences) as the first author and gave the speech about Chinese passwords.
-          - Second Gradle Scholarship for Graduate Freshman
+          - 上海市优秀毕业生(2016)
+          - 研究生国家奖学金 (2014, 2015) 
+          - USENIX 奖学金 ($1200, 2014)
+            - 以第一作者身份发表论文并受邀参加 USENIX (国际四大安全会议之一) 发表关于中文口令的主题演讲
+          - 研究生新生二等奖学金(2013
 
-    - degree: BSc in Software Engineering
-      university: Fudan University
+    - degree: 工学学士（软件工程）
+      university: 复旦大学
       time: 2009.09 - 2013.06
 
-    - degree: BSc in Computer Science
-      university: University College Dublin
+    - degree: 理学学士（计算机科学）
+      university: 都柏林大学
       time: 2010.09 - 2013.06
       details: |
-          Joint education with Fudan University.
+          复旦大学联合办学项目
 
 experiences:
-    title: Experiences
+    title: 工作经历
 
     details:
-      - role: Software Engineer
-        time: 2016.07 - Present
+      - role: 软件工程师
+        time: 2016.07 至今
         company: Unity Technologies (Shanghai)
         details: |
             - [Unity Distribution Portal](#UDP)
             - [Player ID System](#PlayerId)
 
-      - role: Software Engineer Intern
+      - role: 软件工程师（实习生）
         time: 2015.7 - 2015.9
         company: Microsoft (Shanghai)
         details: |
-            - Using Cordova to create a cross-platform app for MSDN.
+            - 使用 Cordova 为 MSDN 创建跨平台 App
 
 projects:
-    title: Projects
+    title: 项目经历
 
     assignments:
       - title: Unity Distribution Portal (UDP) <a id="UDP"> </a>
         techs: C#, Java, Android
         link: "https://distribute.dashboard.unity.com/udp/homepage"
-        tagline: "Unity Distribution Portal is a Unity product that allows developers to distribute games to multiple app stores through a single hub. UDP repacks Android apk with each store’s dedicated IAP SDK and lets developers manage all their store submissions from the UDP console. \n 
-        - Write an Android plugin that has a fake store and integrate real stores' IAP SDK. \n
-        - Write Unity extension (C#) to help developers access the service through OAuth2.0. \n
-        - Repack the Android APK on the server side (Java): Unzip APK, replace smali files of real stores, using aapt2 to rebuild resources, generate R files and at last, output a new APK that targets a desired store. \n
-        - Publish the [SDK](https://assetstore.unity.com/packages/add-ons/services/billing/unity-distribution-portal-138507) to Unity Asset Store and integrate the SDK into [UnityIAP](https://assetstore.unity.com/packages/add-ons/services/billing/unity-iap-68207) (C#), a service used by many developers. \n
-        - Dealing annoying Unity compatible problem with reflection (C#). \n
-        - Maintenance and bug fixes for the SDK. \n
-        - Got $1000 recognition bonus for the exceptional performance as a core member.\n"
+        tagline: "UDP 是一个帮助开发者将游戏分发到多个应用商店的平台。
+                  UDP 使用每个商店的专门的 IAP SDK 重新打包开发者的APK并提交到商店，
+                  并让开发者在 UDP 控制台 （UDP console） 中管理由此提交到商店的全部内容。
+                  \n
+                  - 编写 Android 插件，包含给开发者使用的 Fake IAP Store 和 各个商店 IAP 的整合。\n
+                  - 编写 Unity editor extension，帮助开发者在 Unity 内通过 OAuth2.0 使用 UDP 服务。\n
+                  - 重新打包 Android APK：解包 APK，将 Fake Store 的 smali 文件替换成真正商店的 smali 文件，使用 aapt2 重新编译资源文件，重新生成 R 文件，最后重新打包成 APK。 \n
+                  - 将 [SDK](https://assetstore.unity.com/packages/add-ons/services/billing/unity-distribution-portal-138507) 发布在 Asset Store 并整合到 [UnityIAP](https://assetstore.unity.com/packages/add-ons/services/billing/unity-iap-68207)。\n
+                  - 使用反射处理 SDK 在 Unity 不同版本的兼容性问题。\n
+                  - SDK 维护和 Bug 修复 \n
+                  - 作为项目核心成员，因表现出色获得 1000 美元奖金\n"
 
       - title: Unity Player ID <a id="PlayerId"></a>
         techs: Java, MongoDB
-        tagline: "A service which handles ID system for Unity developers
-(Similar to [Google Firebase Authentication](https://firebase.google.com/docs/auth/)). 
-Developers can manager users login with email/password, phone numbers, famous federated identity providers like Google, Facebook. \n 
-- Write server (Java) that creates user pool, deals with authorization and authentication for the developer. \n
-- Design B (Mongo) & Restful API. \n"
+        tagline: "帮助 Unity 开发者管理用户注册登录的服务（类似[Google Firebase Authentication](https://firebase.google.com/docs/auth/)）。
+                  开发者可以使用Email/Password，电话号码或其他知名第三方登录（Google, Facebook 等）管理用户。\n
+
+                  - 编写 Java server，管理 User pool (ID Domain) \n
+                  - 参与数据库 (MongoDB) 和 REST API 的设 \n"
 
 publications:
-    title: Publications
+    title: 论文
 
     papers:
       - title: A Large-Scale Empirical Analysis of Chinese Web Passwords
@@ -126,7 +129,7 @@ publications:
         link: https://ieeexplore.ieee.org/abstract/document/7275157/
 
 skills:
-    title: Skills &amp; Proficiency
+    title: 专业技能
 
     toolset:
       - name: Java
